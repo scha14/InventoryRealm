@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:weightSum="1"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:weightSum="1">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@android:color/darker_gray"
+        android:id="@+id/product"
+        android:text="Products"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/addButton"
+        android:src="@drawable/add"
+        android:background="#fff"
+        />
+
+
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_weight="0.7"
+        android:layout_height="0dp"
+        android:id="@+id/inventory_recycler_view"
+        android:background="#ffffff"/>
+        <!--android:scrollbars="vertical"-->
+    />
+
+
+</LinearLayout>
